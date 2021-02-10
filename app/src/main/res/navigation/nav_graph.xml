@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasksFragment">
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.osamuelalmeida.myapplication.ui.tasks.TasksFragment"
+        android:label="Lista de Tarefas"
+        tools:layout="@layout/tasks_fragment">
+        <action
+            android:id="@+id/action_tasksFragment_to_addEditFragment"
+            app:destination="@id/addEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.osamuelalmeida.myapplication.ui.addEditTask.AddEditFragment"
+        android:label="{title}"
+        tools:layout="@layout/add_edit_fragment" >
+        <argument
+            android:name="task"
+            app:argType="com.osamuelalmeida.myapplication.data.Task"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAllCompletedDialogFragment"
+        android:name="com.osamuelalmeida.myapplication.ui.deleteAllCompletedTasks.DeleteAllCompletedDialogFragment"
+        android:label="{title}" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_deleteAllCompletedDialogFragment"
+        app:destination="@id/deleteAllCompletedDialogFragment"/>
+</navigation>

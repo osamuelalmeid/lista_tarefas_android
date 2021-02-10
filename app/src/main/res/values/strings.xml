@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lista de Tarefas</string>
+    <string name="name_task">Nome da tarefa</string>
+    <string name="importance_task">Tarefa importante</string>
+    <string name="delete_tasks">Deletar tarefas</string>
+    <string name="delete_all_completed_tasks">Você deseja excluir todas tarefas concluídas?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes">Sim</string>
+</resources>
