@@ -14,4 +14,5 @@ Aplicativo que armazena tarefas em um banco de dados SQLite e pode ser pesquisad
 -   Swipe.
 -   Search.
 -   Constraint Layout.
--   Testes unitários.
+-   Testes unitários. (Unit tests)
+-   Testes instrumentais. (Instrumented tests)
