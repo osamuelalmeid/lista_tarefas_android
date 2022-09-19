@@ -6,7 +6,6 @@ import androidx.test.espresso.matcher.ViewMatchers
 import com.osamuelalmeida.myapplication.R
 import com.osamuelalmeida.myapplication.launchFragmentInHiltContainer
 import dagger.hilt.android.testing.HiltAndroidTest
-
 import org.junit.Before
 import org.junit.Test
 
